@@ -77,6 +77,7 @@
 		overflow:hidden;
 		margin-right: 370px;
 		margin-bottom: 18px;
+		width : 600px;
 		
 	}
 	#imgBox{
@@ -97,6 +98,7 @@
 		display : inline-block;
 	}
 	#main_lnb > ul > li{
+		overflow:hidden;
 		float: left;
 	}
 	
