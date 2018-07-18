@@ -81,7 +81,7 @@
 		<div id="box4">
 			<p style="margin-left: 20px; margin-top: 5px;">
 				<img src = "${contextPath}/img/conversation.png" width = "40px" height = "40px">
-				<a href="#" style="font-size: 14px; margin-left : 20px;">메신저</a>
+				<a href="${contextPath}/page/messengerMainForm" style="font-size: 14px; margin-left : 20px;">메신저</a>
 			</p>
 		</div>
 		<br>
