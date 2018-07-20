@@ -44,7 +44,7 @@
 			<div id="userInfo">
 				<ul>
 					<li>IT부 사원</li>
-					<li>홍길동님</li>
+					<li>홍길동님ㅇㅇ</li>
 					
 				</ul>
 				<br>
