@@ -51,7 +51,7 @@
 			<form action="addMessage" id="msg_sendBox">
 				<p>제목</p>
 				<input type="text" name="title">
-				<p></p>
+				<p>ㅠㅠ</p>
 				<input type="text" name="title">
 				<p>내용</p>
 				<textarea rows="20" cols="80" name="content"></textarea>
