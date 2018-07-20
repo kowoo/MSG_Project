@@ -6,19 +6,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src = "${contextPath}/js/main.js"></script>
 </head>
 <body>
-	<header id="main_header"> 
-		<hgroup id="title"> 
-			<img src="${contextPath}/img/msgLogo.png">
+	<input type="hidden" id="path" value="${contextPath}"> 
+	<header id="main_header">
+		<hgroup id="title">
+			<img src="${contextPath}/img/msgLogo.png" onclick="location.href='${contextPath}/page/main'">
 		</hgroup> 
 		
 		<nav id="main_lnb">
 			<ul id="ul1">
 				<li><a>게시판</a></li>
 				<li><a>메일</a></li>
-				<li><a>전자결제</a></li>
-				<li><a>메신저</a></li>
+				<li><a>전자결재</a></li>
+				<li><a href="${contextPath}/page/messengerMain">메신저</a></li>
 				<li><a>비품대여</a></li>
 			</ul>
 			<div id="imgBox">
