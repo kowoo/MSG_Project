@@ -47,7 +47,7 @@
 		
 		<!-- 본문 -->
 		<div id="menuBox2">
-			<a>받은 쪽지함</a>
+			<a>휴지통</a>
 			<hr>
 			<table id="messageTable">
 				<tr>

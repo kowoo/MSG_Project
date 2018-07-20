@@ -1,9 +1,4 @@
 	$(function() {
-		$('#calendar').fullCalendar({
-			  defaultView: 'month',
-			  height : 330,
-			  
-		});
 		
 		var x, y;
 		var getLocation = function(){
@@ -17,10 +12,10 @@
 				}
 			});
 			
-			
 		};
 
 		function doWeather(){
+			var path = $("#path").val();
 			getLocation().then(function (result){
 				$.ajax({
 					url : "weather/getWeather?posX="+x+"&posY="+y,
@@ -53,3 +48,15 @@
 		};
 		doWeather();
 	});
+function showMyPage(){
+	   $("#modifyBox").show("slow");
+	   var width = $(window).width();
+	   var height = $(window).height();
+	   $("#mask").css({'width' : width, 'height' : height});
+	   $("#mask").fadeIn(1000);
+	   $("#mask").fadeTo("fast",0.6);
+};
+function closeMyPage(){
+	   $("#modifyBox").hide("slow");
+	   $("#mask").css({'width' : 0, 'height' : 0});
+};

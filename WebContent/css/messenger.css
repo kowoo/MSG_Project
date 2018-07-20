@@ -1,208 +1,141 @@
-		
-		/* 초기화 */
-	*{
-		margin : 0;
-		padding : 0;
+@charset "UTF-8";
+	#side_box{
+		width: 20%;
+		display: inline-block;
 	}
-	
-	body{
-		font-family: sans-serif;
-	}
-	
-	li{
-		list-style: none;
-	}
-	
-	a{
-		text-decoration: none;
-		color: black;
-		font-weight: bold;
-	}
-	
-	a:hover{
-		color : #fb2525;
-	}
-	
-	div{
-		color : #333;
-	}
-	
-	img{
-		border: 0;
-	}
-/* 	#main_header > #main_gnb{ */
-/* 		position: absolute; */
-/* 		right: 0; */
-/* 		top: 0; */
-/* 	} */
-	
-	#main_header > #main_lnb {
-		position: absolute; 
-		top : 30px;
-		left : 660px;
-		bottom: 4px;
-	}
-	
-		/* 	메뉴2 */
-	#main_lnb > ul{
-		overflow:hidden;
-		margin-right: 370px;
-		margin-bottom: 18px;
-		
-	}
-	
-	#imgBox{
-		position : absolute;
-		top : 0;
-		left : 700px;
-		display : inline-block;
-		
-	}
-	#imgBox img{
-		width : 30px;
-		height : 30px;
-	}
-	#imgBox h4{
-		display : inline-block;
-	}
-	
-	#main_lnb > ul > li{
-		float: left;
-	}
-	
-	#main_lnb > ul > li > a{
-		display: block;
-		padding: 10px 20px; 
-		font-size: 20px;
-	}
-	
-	#main_lnb > ul > li > a:hover {
-		color: #fb2525;
-	}
-	
-		/* 	콘텐츠 */
-	#content{
-		width:1200px; 
-		height: 760px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-	
-	#content > #nameBox {
-		position : absolute;
-		width : 200px;
-		height : 100px;
-		margin-left: 260px;
-		margin-top: 20px;
-	}
-	
-	#content > p > a {
-		font-family: monospace;
-		font-weight: normal;
-	}
-	
-	#table {
-		position: absolute;
-		margin-top: 30px;
-		margin-left: 10px;
-		width: 750px;
-	}
-	
-	#tr1 {
-		font-size: 17px;
-		padding: 8px;
-	}
-	
-	th {
-		background-color: #E6E6E6;
-		padding: 8px;
-	}
-
-	/* 메뉴박스1 (board_main_css)*/
+	/* 	메신저 페이지 사이드 박스 */
 	#content > #menuBox1 {
 		position: absolute;
 		width : 200px;
-		height: 700px;
+		height: 300px;
 		background-color: white;
-		margin-top: 20px;
-		margin-left: 20px;
+		margin-top: 27px;
+		border-bottom: 0.5px solid #fb2525;
 	}
-		
-	#hr1 {
-		border: 1.5px solid #fb2525;
+	#menuBox1_title{
+		text-align: center;
 	}
-	
-	#hr2 {
-		border: 0.5px solid #fb2525;
-		margin-top: 120px;
+	#menuBox1 > ul{
+		margin-left: 50px;
 	}
-	
-	#hr3 {
-		border: 1.5px solid gray;
+	/* 메신저 페이지 사이드 박스 하위 항목의 하위 항목 기본값*/
+	.sideBox_sub{
+		display: none;
 	}
-	
-	#hr4 {
-		border: 1px solid silver;
-		margin-top: 600px;
+	.sideList{
+		font-size: 12px;
+		margin-left: 25px;
 	}
-		
-	#content > #menuBox1 > #menuBox1Ul > li > a {
-		font-size: 15px;
+	/* 메시지 박스 th*/
+	.msg_th{
+		background: #F9F9F9;
+		font-weight: normal;
+		margin: 0;
+		padding: 1px;
+		text-align: left;
 	}
-	
-	#content > #menuBox1 > #menuBox1Ul {
-		padding-left: 30px;
-	}
-	
-	/* 메뉴박스2 (board_main_css)*/
-	#content > #menuBox2 {
+	/* 	본문 부분 */	
+	#content > #menuBox2{
 		position: absolute;
 		width : 800px;
-		height : 170px;
+		height : 500px;
 		background-color: white;
-		margin-top : 50px;
-		margin-left : 260px;
+		margin-top : 47px;
+		margin-left : 280px;
+		overflow: auto;
 	}
-	
-	#content > #menuBox2 > #colorBox1 {
-		position: absolute;
-		background-color: #3CB371;
-		width: 30px;
-		height: 200px;
-		margin-left: 770px;
+	#menuBox2 > hr {
+		border: 1px solid gray;
+		margin-top: 5px;
 	}
-	
-	/* 메뉴박스3 (board_main_css)*/
-	#content > #menuBox3 {
-		position: absolute;
-		width : 800px;
-		height : 200px;
-		background-color: white;
-		margin-top : 290px;
-		margin-left : 260px;
+	/* 받은 메시지함 */
+	#messageTable{
+		border: none;
 	}
-	
-	#content > #menuBox3 > #colorBox2 {
-		position: absolute;
-		background-color: #3CB371;
-		width: 30px;
-		height: 200px;
-		margin-left: 770px;
+	#messageTable td{
+		padding: 2px;
+		text-align: left;
+		border-bottom: 0.3px solid silver;
+		margin-bottom: 2px;
 	}
-	/* 메뉴박스4 (board_main_css)*/
-	#content > #menuBox4 {
-		position: absolute;
-		width : 800px;
-		height : 200px;
-		background-color: white;
-		margin-top : 520px;
-		margin-left : 260px;
+	.msg_btn{
+		margin-top: 10px;
 	}
-	
-	#content > #menuBox4 > #colorBox3 {
+	#msg_hr{
+		border : 1px solid #fb2525;
+	}
+	#pagingBox{
 		position: absolute;
-		background-color: #3CB371;
-		width: 30px;
-		height: 200px;
-		margin-left: 770px;
+		width: 800px;
+		margin-top: 530px;
+		font-size: 12px;
+		margin-left: 300px;
+		display: inline-block;
+	}
+	#paging{
+		width: 50%;
+		margin-left: 25%;
+		display: inline-block;
+	}
+	#msg_searchBox{
+		position: absolute;
+		margin-left: 480px;
+		margin-top: 550px;
+		width: 800px;
+	}
+	#searchType{
+		position: absolute;
+		margin-left: -30px;
+		margin-top: 0px;
+	}
+	#msg_searchBox > input[type="button"], #msg_searchBox > input[type="text"], #msg_searchBox > select{
+		display: inline-block;
+		position: absolute;
+		padding: 5px;
+		color: #333;
+		background-color: #fff;
+		border: 1px solid #333;
+	}
+	#msg_searchBox > input[type="button"]{
+		margin-left: 265px;
+	}
+	#msg_searchBox > input[type="text"]{
+		margin-left: 75px;
+		margin-top: 1px;
+	}
+	/*쓰기 화면*/
+	#msg_sendBox > input[type="text"]{
+		width: 50%;
+	}
+	#msg_sendBox > p{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	#msg_sendBox > input[type="button"], #msg_sendBox > input[type="submit"]{
+		text-align: center;
+		display: inline-block;
+		padding: 3px;
+		color: #333;
+		background-color: #fff;
+		border: 0.5px solid silver;
+		margin-left: 100px;
+	}
+	a{
+	 cursor:pointer;
+	}
+	.messageContent{
+		margin-left: 10px;
+	}
+	#modal-reply{
+		display: none;
+		width: 50px;
+		height: 50px;
+		background-color: gray;
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		padding: 10px;
+		margin-top: -100px;
+		margin-left: -100px;
+		z-index: 1000;
 	}

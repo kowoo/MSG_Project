@@ -47,7 +47,7 @@
 		
 		<!-- 본문 -->
 		<div id="menuBox2">
-			<a>받은 쪽지함</a>
+			<a>보낸 쪽지함</a>
 			<hr>
 			<table id="messageTable">
 				<tr>
@@ -175,7 +175,6 @@
 			<input type="button" id="btn-close" value="닫기">
 		</div>
 	</div>
-		
 <jsp:include page="/jsp/pageFooter.jsp"></jsp:include>
 </body>
 </html>
