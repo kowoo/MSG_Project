@@ -17,7 +17,7 @@
 <body>
 <jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
 	<div id="content">
-		<!-- 사이드 -->
+		<!-- 사이드 --> 
 		<div id="menuBox1">
 			<h3 id="menuBox1_title">메신저</h3>
 			<br>

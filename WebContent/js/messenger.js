@@ -1,5 +1,5 @@
 $(function(){
-	//쪽지함 전체 체크 이벤트
+	//쪽지함 전체 체크 이벤트 
 	$("#allCheck").click(function() {
 		if($("#allCheck").prop("checked")) {
 			$("input[type=checkbox]").prop("checked",true);

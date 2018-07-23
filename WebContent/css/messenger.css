@@ -2,7 +2,7 @@
 	#side_box{
 		width: 20%;
 		display: inline-block;
-	}
+	} 
 	/* 	메신저 페이지 사이드 박스 */
 	#content > #menuBox1 {
 		position: absolute;

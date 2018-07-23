@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/page")
-public class ViewController {
+public class ViewController { 
 	@RequestMapping("/main")
 	public String main() {
 		return "main1";

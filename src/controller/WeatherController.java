@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/weather")
-public class WeatherController {
+public class WeatherController { 
    private String url = "http://newsky2.kma.go.kr/service/SecndSrtpdFrcstInfoService2";
    private static final String KEY = "G%2Fam94qe09ffWYFLKa8DdSGFBME5VlUXpZB5VZSNNLF4HKw506z5eT%2BoSxTMTW6I1FP5cWOdSnutZbUTCqFtZA%3D%3D";
    private static final String SECRET = "47dbb50a4441852fc9b51454265610e1";
