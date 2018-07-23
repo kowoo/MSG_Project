@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%request.setAttribute("contextPath", request.getContextPath());%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -46,7 +47,48 @@
 		</div>
 		<div id="menuBox2">
 			<a>참여 중인 채팅방 목록</a>
-			<hr>		
+			<hr width="500px;">
+			<table id="chatRoom-list">
+				<tr id="tr1">
+					<th id="th1" colspan="2">채팅 방 제목</th>
+					<th id="th2">참여자 수</th>
+				</tr>
+				<c:forEach items="chatList" var="chat">
+					<tr>
+						<td class="chatList-tr">
+							<a class="chatList-title">${chat}.title</a> 
+							<!-- 안읽은 채팅개수 -->
+							<span>(${chat}.count)</span>
+						</td>
+						<td>
+							<!-- 마지막 채팅 내용(10자 초과시 ...) -->
+							<span>(${chat}.content)</span>
+						</td>
+							<!-- 여기에 참여자 수 -->
+						<td>${chat}.members</td>
+					</tr>
+					<tr>
+						<td colspan="3"><hr></td>
+					</tr>
+					<tr>
+						<td class="chatList-tr">
+							<a class="chatList-title">${chat}.title</a>
+							<!-- 안읽은 채팅개수 -->
+							<span>(${chat}.count)</span>
+						</td>
+						<td>
+							<!-- 마지막 채팅 내용(10자 초과시 ...) -->
+							<span>(${chat}.content)</span>
+						</td>
+							<!-- 여기에 참여자 수 -->
+						<td>${chat}.members</td>
+					</tr>
+					<tr>
+						<td colspan="3"><hr></td>
+					</tr>
+
+				</c:forEach>
+			</table>
 		</div>
 	</div>
 <jsp:include page="/jsp/pageFooter.jsp"></jsp:include>

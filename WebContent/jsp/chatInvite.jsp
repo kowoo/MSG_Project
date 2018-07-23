@@ -45,9 +45,21 @@
 			</ul>
 		</div>
 		<div id="menuBox2">
-			<a>초대 채팅방 목록</a>
-			
-			<hr>		
+			<a>채팅 초대 목록</a>
+			<hr width="400px;">
+			<ul>
+				<!-- ajax로 구현하자. 틀은 유지 -->
+				<li>
+					<span>초대자 id</span>
+				</li>
+				<li>
+					<span>채팅 방 제목</span>
+				</li>
+				<li>
+					<button>참여</button>
+					<button>거절</button>
+				</li>
+			</ul>		
 		</div>
 	</div>
 <jsp:include page="/jsp/pageFooter.jsp"></jsp:include>

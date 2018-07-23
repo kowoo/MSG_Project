@@ -36,7 +36,7 @@
 				<li><br></li>
 				<li id="sideList_chat">
 					<a>채팅</a>
-					<ul id="chat_sub" class="sideBox_sub">
+					<ul id="chat_sub" class="sideBox_sub" style="display: inline;">
 						<li><a class="sideList" href="${contextPath}/page/chatList">내 채팅방 목록</a></li>
 						<li><a class="sideList" href="${contextPath}/page/chatFormByCondition?key=invite">채팅 초대 목록</a></li>
 						<li><a class="sideList" href="${contextPath}/page/chatFormByCondition?key=add">채팅방 만들기</a></li>
@@ -48,15 +48,12 @@
 		<div id="menuBox2">
 			<a>채팅 방 만들기</a>
 			<hr width="400px;">
-			<form action="addMessage" id="msg_sendBox">
-				<p>제목</p>
-				<input type="text" name="title">
-				<p>ㅠㅠ</p>
-				<input type="text" name="title">
-				<p>내용</p>
-				<textarea rows="20" cols="80" name="content"></textarea>
+			<form action="${contextPath}/chat/addChatRoom" onsubmit="return checkRoomName()" id="msg_sendBox" method="post">
+				<p>채팅 방 제목</p>
+				<input type="text" name="title" id="chat-title">
 				<br>
-				<input type="submit" value="보내기">
+				<br>
+				<input type="submit" value="만들기">
 				<input type="button" value="취소" onclick="history.go(-1)">
 			</form>
 		</div>

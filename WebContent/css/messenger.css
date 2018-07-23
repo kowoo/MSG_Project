@@ -38,11 +38,11 @@
 	#content > #menuBox2{
 		position: absolute;
 		width : 800px;
-		height : 500px;
+		max-height: 480px;
 		background-color: white;
 		margin-top : 47px;
 		margin-left : 280px;
-		overflow: auto;
+		overflow-y: auto;
 	}
 	#menuBox2 > hr {
 		border: 1px solid gray;
@@ -58,8 +58,8 @@
 		border-bottom: 0.3px solid silver;
 		margin-bottom: 2px;
 	}
-	.msg_btn{
-		margin-top: 10px;
+	#msg-deleteBtn, #msg-deleteBtn-ever, #msg-restoreBtn{
+		margin-left: 20px;
 	}
 	#msg_hr{
 		border : 1px solid #fb2525;
@@ -104,7 +104,10 @@
 		margin-top: 1px;
 	}
 	/*쓰기 화면*/
-	#msg_sendBox > input[type="text"]{
+	#msg_sendBox > #receiver{
+		width: 46.5%;
+	}
+	#msg_sendBox > #title{
 		width: 50%;
 	}
 	#msg_sendBox > p{
@@ -118,7 +121,6 @@
 		color: #333;
 		background-color: #fff;
 		border: 0.5px solid silver;
-		margin-left: 100px;
 	}
 	a{
 	 cursor:pointer;
@@ -139,3 +141,71 @@
 		margin-left: -100px;
 		z-index: 1000;
 	}
+	#msg-write-btn, #btn-reply, #msg-receiver-btn{
+		text-align: center;
+		display: inline-block;
+		padding: 3px;
+		color: #333;
+		background-color: #fff;
+		border: 0.5px solid silver;
+	}
+	#btn-reply{
+		font-size: 12px;
+		cursor: pointer;
+	}
+	#receiver{
+		margin-bottom : 10px;
+	}
+	#Organization-chart{
+		top : 100px;
+		left : 700px;
+		width : 300px;
+		height : 200px;
+		background-color: #fff;
+		color: black;
+		position: absolute;
+		z-index : 1000;
+	}
+	#o-chart{
+		position: inherit;
+		left : 0px;
+	}
+	#chart-button{
+		position: inherit;
+		top: 150px;
+		z-index: 500;
+	}
+	#chatRoom-list{
+		width: 500px;
+		height: auto;
+		max-height: 50px;
+		overflow-y: auto;
+	}
+	#th1{
+		text-align: left;
+		font-size: 12px;
+		width: 80%;
+	}	
+	#th2{
+		font-size: 12px;
+	}
+	#th1, #th2{
+		font-weight: normal;
+	}
+	
+/* 	#chatRoom-list > tr > #th2{ */
+/* 		width: 19%; */
+/* 		text-align: center; */
+/* 	} */
+	.chatList-tr{
+		text-align: left;
+		font-size: 15px;
+	}
+	.chatList-title-a{
+		margin-left : 20px;
+	}
+	.chatList-tr > span{
+		font-size: 12px;
+		color: orange;
+	}
+	

@@ -5,6 +5,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,7 +25,8 @@ public class ViewController {
 		return "chatList";
 	}
 	@RequestMapping("/messageWriteForm")
-	public String messageWriteForm() {
+	public String messageWriteForm(@RequestParam(defaultValue="") String id, Model model) {
+		model.addAttribute("receiver", id);
 		return "messageWrite";
 	}
 	@RequestMapping("/messageFormByCondition")
@@ -49,6 +51,11 @@ public class ViewController {
 			return "chatMain";
 		}
 	}
+	@RequestMapping("/openChatRoom")
+	public String chatRoom(@RequestParam(defaultValue="") String key) {
+		System.out.println(key);
+		return "chatRoom";
+	}	
 //	@RequestMapping("/msg_view")
 //	public String selectMessageByCondition(@RequestParam String key) {
 //		System.out.println("msg_view");
