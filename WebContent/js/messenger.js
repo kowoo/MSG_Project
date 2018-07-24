@@ -101,6 +101,13 @@ $(function(){
 		//alert(name);
 		window.open("openChatRoom?key=a","_blank","width=380px,height=450px,location=no,status=no,top=250px,left=700px");
 	});
+	$("#chat-join").on("click",function(){
+		//채팅참여
+		alert("이름"+"채팅방에 참여합니다.");		
+	});
+	$("#chat-reject").on("click",function(){
+		//채팅참여 거절
+	});
 });
 //조직도에서 선택한 값을 받는 이 텍스트에 삽입.
 function chartSelect() {

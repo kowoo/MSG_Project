@@ -17,7 +17,9 @@
 <body>
 <jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
 	<div id="content">
-		<!-- 사이드 -->
+
+		<!-- 사이드 --> 
+
 		<div id="menuBox1">
 			<h3 id="menuBox1_title">메신저</h3>
 			<br>
@@ -47,7 +49,9 @@
 		
 		<!-- 본문 -->
 		<div id="menuBox2">
+
 			<a>받은 쪽지함</a> <button id="msg-deleteBtn">삭제</button>
+
 			<hr>
 			<table id="messageTable">
 				<tr>
@@ -57,19 +61,26 @@
 					<th class="msg_th" width="25%">날짜</th>
 				</tr>
 				<tr>
+
+					<td><input type="checkbox"></td>
+					<td><a class="replyModal">이장님</a></td>
+
 										<!-- 쪽지 삭제를 위한 값(시퀀스를 가져오거나 쪽지번호를 가져오자) -->
 					<td><input type="checkbox" value="1"></td>
 					<td>
 						<a class="replyModal">이장님</a>
 						<input type="hidden" value="이장아이디" class="reply-id">
 					</td>
+
 					<td><a class="messageTitle">프로젝트 디자인 너무 힘듬</a>
 					</td>
 					<td>18-07-19 [14:01]</td>
 				</tr>
 				<tr>
-					<td><input type="checkbox" value="2"></td>
-					<td><a class="replyModal">예비군</a></td>
+
+					<td><input type="checkbox"></td>
+					<td><a>예비군</a></td>
+
 					<td><a class="messageTitle">원용이가 예비군을 가버렸습니다. ㅋㅋㅋ</a></td>
 					<td>18-07-19 [14:01]</td>
 				</tr>
@@ -154,6 +165,7 @@
 			</table>
 		</div>
 		<div id="pagingBox">
+
 			<p id="paging">[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [다음]</p>
 		</div>
 		<div id="msg_searchBox">
@@ -168,6 +180,18 @@
 			<input type="button" value="검색" onclick="search();">
 		</div>
 	</div>
+
+	<div id="modal-reply" style="display:none;">
+		<div>
+			<!-- 얘가 원래  modal-replyContent-->
+			<input type="hidden" id="modal-sender">
+		</div>
+		<div>
+			<input type="button" id="btn-reply" value="쪽지 쓰기">
+			<input type="button" id="btn-close" value="닫기">
+		</div>
+	</div>
+
 	<div id="replyBox" style="display:none;">
 		<div>
 			<!-- 얘가 원래  modal-replyContent-->

@@ -1,6 +1,6 @@
 	$(function() {
 		
-		var x, y;
+		var x, y; 
 		var getLocation = function(){
 			return new Promise(function (resolve, reject){
 				if(navigator.geolocation){

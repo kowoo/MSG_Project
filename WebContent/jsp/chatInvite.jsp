@@ -46,6 +46,32 @@
 		</div>
 		<div id="menuBox2">
 			<a>채팅 초대 목록</a>
+
+			<hr width="550px;">
+			<table id="chat-invite-table">
+				<tr>
+					<th>방 제목</th>
+					<th>초대자 id</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>이장님과 함께 농사지읍시다.</td>
+					<td>이장님</td>
+					<td>
+						<button id="chat-join">참여</button>
+						<button id="chat-reject">거절</button>
+					</td>
+				</tr>
+				<tr>
+					<td>인사 2팀</td>
+					<td>인사돌</td>
+					<td>
+						<button>참여</button>
+						<button>거절</button>
+					</td>
+				</tr>
+			</table>
+
 			<hr width="400px;">
 			<ul>
 				<!-- ajax로 구현하자. 틀은 유지 -->
