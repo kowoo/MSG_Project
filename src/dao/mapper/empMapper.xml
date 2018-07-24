@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "dao.EmpDao">
+	<select id="getMember" parameterType="map" resultType="map">
+		SELECT * FROM EMP WHERE EMPNO = #{EMPNO}
+	</select>
+	<select id = "getMemberInfo" parameterType="string" resultType="map">
+		SELECT * FROM empInfo WHERE EMPNO = #{EMPNO}
+	</select>
+	<select id="getFileName" parameterType="string" resultType="string">
+		SELECT imgName FROM empPic where empNo = #{empNo}
+	</select>
+	<update id ="modifyEmpByUser" parameterType="map">
+		UPDATE EMP SET empMail = #{EMPMAIL}, empTel = #{EMPTEL} where empNo = #{empNo}
+	</update>
+	<update id = "modifyEmpPic" parameterType="map">
+		UPDATE empPic SET imgName = #{FILE} WHERE empNo = #{EMPNO}
+	</update>
+	
+	<select id = "selectOne" resultType="map" parameterType="string">
+		SELECT * FROM EMPALLINFO WHERE empNo = #{empNo}
+	</select>
+	
+	<select id = "selectByDept" resultType="map" parameterType="string">
+		SELECT * 
+		FROM (SELECT * FROM EMPINFO ORDER BY DEPTNAME, MAPPINGNUM) E
+		WHERE DEPTNAME = #{dept}
+	</select>
+	
+	<select id = "selectOderedAll" resultType="map">
+		SELECT * 
+		FROM (SELECT * FROM EMPINFO ORDER BY DEPTNAME, MAPPINGNUM) E;
+	</select>
+</mapper>

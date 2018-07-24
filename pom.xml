@@ -24,7 +24,7 @@
       </plugin>
     </plugins>
   </build>
-  	<properties>
+ 	<properties>
 		<org.springframework-version>4.3.14.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.8.13</org.aspectj-version>
 	</properties>
@@ -60,6 +60,12 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
+ 		 <!-- MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.5</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
