@@ -1,42 +1,109 @@
-@charset "UTF-8";
-	#side_box{
-		width: 20%;
-		display: inline-block;
+		
+		/* 초기화 */
+	*{
+		margin : 0;
+		padding : 0;
 	}
-	/* 	메신저 페이지 사이드 박스 */
-	#content > #menuBox1 {
-		position: absolute;
+	
+	body{
+		font-family: sans-serif;
+	}
+	
+	li{
+		list-style: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+	
+	a:hover{
+		color : #fb2525;
+	}
+	
+	div{
+		color : #333;
+	}
+	
+	img{
+		border: 0;
+	}
+/* 	#main_header > #main_gnb{ */
+/* 		position: absolute; */
+/* 		right: 0; */
+/* 		top: 0; */
+/* 	} */
+	
+	#main_header > #main_lnb {
+		position: absolute; 
+		top : 30px;
+		left : 660px;
+		bottom: 4px;
+	}
+	
+		/* 	메뉴2 */
+	#main_lnb > ul{
+		overflow:hidden;
+		margin-right: 370px;
+		margin-bottom: 18px;
+		
+	}
+	
+	#imgBox{
+		position : absolute;
+		top : 0;
+		left : 700px;
+		display : inline-block;
+		
+	}
+	#imgBox img{
+		width : 30px;
+		height : 30px;
+	}
+	#imgBox h4{
+		display : inline-block;
+	}
+	
+	#main_lnb > ul > li{
+		float: left;
+	}
+	
+	#main_lnb > ul > li > a{
+		display: block;
+		padding: 10px 20px; 
+		font-size: 20px;
+	}
+	
+	#main_lnb > ul > li > a:hover {
+		color: #fb2525;
+	}
+	
+		/* 	콘텐츠 */
+	#content{
+		width:1200px; 
+		height: 760px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	#content > #nameBox {
+		position : absolute;
 		width : 200px;
-		height: 300px;
-		background-color: white;
-		margin-top: 27px;
-		border-bottom: 0.5px solid #fb2525;
+		height : 100px;
+		margin-left: 260px;
+		margin-top: 20px;
 	}
-	#menuBox1_title{
-		text-align: center;
-	}
-	#menuBox1 > ul{
-		margin-left: 50px;
-	}
-	/* 메신저 페이지 사이드 박스 하위 항목의 하위 항목 기본값*/
-	.sideBox_sub{
-		display: none;
-	}
-	.sideList{
-		font-size: 12px;
-		margin-left: 25px;
-	}
-	/* 메시지 박스 th*/
-	.msg_th{
-		background: #F9F9F9;
+	
+	#content > p > a {
+		font-family: monospace;
 		font-weight: normal;
-		margin: 0;
-		padding: 1px;
-		text-align: left;
 	}
-	/* 	본문 부분 */	
-	#content > #menuBox2{
+	
+	#table {
 		position: absolute;
+<<<<<<< HEAD
 		width : 800px;
 		max-height: 480px;
 		background-color: white;
@@ -60,37 +127,81 @@
 	}
 	#msg-deleteBtn, #msg-deleteBtn-ever, #msg-restoreBtn{
 		margin-left: 20px;
+=======
+		margin-top: 30px;
+		margin-left: 10px;
+		width: 750px;
 	}
-	#msg_hr{
-		border : 1px solid #fb2525;
+	
+	#tr1 {
+		font-size: 17px;
+		padding: 8px;
+>>>>>>> parent of 0048f39... 07.20 test
 	}
-	#pagingBox{
+	
+	th {
+		background-color: #E6E6E6;
+		padding: 8px;
+	}
+
+	/* 메뉴박스1 (board_main_css)*/
+	#content > #menuBox1 {
 		position: absolute;
-		width: 800px;
-		margin-top: 530px;
-		font-size: 12px;
-		margin-left: 300px;
-		display: inline-block;
+		width : 200px;
+		height: 700px;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 20px;
 	}
-	#paging{
-		width: 50%;
-		margin-left: 25%;
-		display: inline-block;
+		
+	#hr1 {
+		border: 1.5px solid #fb2525;
 	}
-	#msg_searchBox{
+	
+	#hr2 {
+		border: 0.5px solid #fb2525;
+		margin-top: 120px;
+	}
+	
+	#hr3 {
+		border: 1.5px solid gray;
+	}
+	
+	#hr4 {
+		border: 1px solid silver;
+		margin-top: 600px;
+	}
+		
+	#content > #menuBox1 > #menuBox1Ul > li > a {
+		font-size: 15px;
+	}
+	
+	#content > #menuBox1 > #menuBox1Ul {
+		padding-left: 30px;
+	}
+	
+	/* 메뉴박스2 (board_main_css)*/
+	#content > #menuBox2 {
 		position: absolute;
-		margin-left: 480px;
-		margin-top: 550px;
-		width: 800px;
+		width : 800px;
+		height : 170px;
+		background-color: white;
+		margin-top : 50px;
+		margin-left : 260px;
 	}
-	#searchType{
+	
+	#content > #menuBox2 > #colorBox1 {
 		position: absolute;
-		margin-left: -30px;
-		margin-top: 0px;
+		background-color: #3CB371;
+		width: 30px;
+		height: 200px;
+		margin-left: 770px;
 	}
-	#msg_searchBox > input[type="button"], #msg_searchBox > input[type="text"], #msg_searchBox > select{
-		display: inline-block;
+	
+	/* 메뉴박스3 (board_main_css)*/
+	#content > #menuBox3 {
 		position: absolute;
+<<<<<<< HEAD
 		padding: 5px;
 		color: #333;
 		background-color: #fff;
@@ -121,19 +232,35 @@
 		color: #333;
 		background-color: #fff;
 		border: 0.5px solid silver;
+=======
+		width : 800px;
+		height : 200px;
+		background-color: white;
+		margin-top : 290px;
+		margin-left : 260px;
+>>>>>>> parent of 0048f39... 07.20 test
 	}
-	a{
-	 cursor:pointer;
-	}
-	.messageContent{
-		margin-left: 10px;
-	}
-	#modal-reply{
-		display: none;
-		width: 50px;
-		height: 50px;
-		background-color: gray;
+	
+	#content > #menuBox3 > #colorBox2 {
 		position: absolute;
+		background-color: #3CB371;
+		width: 30px;
+		height: 200px;
+		margin-left: 770px;
+	}
+	/* 메뉴박스4 (board_main_css)*/
+	#content > #menuBox4 {
+		position: absolute;
+		width : 800px;
+		height : 200px;
+		background-color: white;
+		margin-top : 520px;
+		margin-left : 260px;
+	}
+	
+	#content > #menuBox4 > #colorBox3 {
+		position: absolute;
+<<<<<<< HEAD
 		top: 40%;
 		left: 40%;
 		padding: 10px;
@@ -213,3 +340,10 @@
 	}
 
 	
+=======
+		background-color: #3CB371;
+		width: 30px;
+		height: 200px;
+		margin-left: 770px;
+	}
+>>>>>>> parent of 0048f39... 07.20 test

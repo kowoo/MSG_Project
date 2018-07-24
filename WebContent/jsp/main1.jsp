@@ -18,18 +18,20 @@
 <script src='${contextPath}/fullcalendar/jquery.min.js'></script>
 <script src='${contextPath}/fullcalendar/moment.min.js'></script>
 <script src='${contextPath}/fullcalendar/fullcalendar.js'></script>
+
+
 <script src='${contextPath}/fullcalendar/ko.js'></script>
+
 <title>메인</title>
 </head>
 
 <script type="text/javascript" src = "${contextPath}/js/main.js"></script>
-<script type="text/javascript" src = "${contextPath}/js/calendar.js"></script>
 
 <body>
-	<div id = "mask"></div>
+
 	<jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
 	<!-------------------------------------헤더--------------------------------------------------------->
-	
+
 	<input type = "hidden" id = "path" value = "${contextPath}">
 	<div id="content">
 
@@ -80,7 +82,7 @@
 		<div id="box4">
 			<p style="margin-left: 20px; margin-top: 5px;">
 				<img src = "${contextPath}/img/conversation.png" width = "40px" height = "40px">
-				<a href="#" style="font-size: 14px; margin-left : 20px;">메신저</a>
+				<a href="${contextPath}/page/messengerMainForm" style="font-size: 14px; margin-left : 20px;">메신저</a>
 			</p>
 		</div>
 		<br>
@@ -125,6 +127,7 @@
 			</p>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<div id = "modifyBox" style = "display : none;" align = "center">
 
            <input type = "button" id = "modiBtn" value = "X" style = "float:right;" onclick = "closeMyPage();">
@@ -168,6 +171,8 @@
            <input type = "submit" class = "modiBtn" value = "변경저장">
         </form>
      </div>
+=======
+>>>>>>> parent of 0048f39... 07.20 test
 
 	<!-------------------------------------바디---------------------------------------------------------------------------->
 	<jsp:include page="/jsp/pageFooter.jsp"></jsp:include>

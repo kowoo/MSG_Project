@@ -5,47 +5,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="${contextPath}/css/main.css?ver=7">
 <link rel="stylesheet" type="text/css" href="${contextPath}/css/messenger.css?ver=7">
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src = "${contextPath}/js/messenger.js"></script>
 <title>Messenger Main</title>
 </head>
 <body>
 <jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
+	
 	<div id="content">
+<<<<<<< HEAD
 
 		<!-- 사이드 --> 
 
+=======
+		<div id="nameBox">
+			<p>쪽지</p>
+			<hr id="hr1">
+		</div>
+>>>>>>> parent of 0048f39... 07.20 test
 		<div id="menuBox1">
-			<h3 id="menuBox1_title">메신저</h3>
-			<br>
-			<hr id="msg_hr">
-			<br>
-			<ul>
-				<li id="sideList_msg">
+			<p>쪽지</p>			
+			<ul id="menuBox1Ul">
+				<li>
 					<a>쪽지</a>
-					<ul id="msg_sub" class="sideBox_sub">
-						<li><a class="sideList" href="${contextPath}/page/messageWriteForm">쪽지 쓰기</a></li>
-						<li><a class="sideList" href="${contextPath}/page/messageFormByCondition?key=receive">받은 쪽지함</a></li>
-						<li><a class="sideList" href="${contextPath}/page/messageFormByCondition?key=send">보낸 쪽지함</a></li>
-						<li><a class="sideList" href="${contextPath}/page/messageFormByCondition?key=delete">휴지통</a></li>
-					</ul>
 				</li>
-				<li><br></li>
-				<li id="sideList_chat">
+				<li>
 					<a>채팅</a>
-					<ul id="chat_sub" class="sideBox_sub">
-						<li><a class="sideList" href="${contextPath}/page/chatList">내 채팅방 목록</a></li>
-						<li><a class="sideList" href="${contextPath}/page/chatFormByCondition?key=invite">채팅 초대 목록</a></li>
-						<li><a class="sideList" href="${contextPath}/page/chatFormByCondition?key=add">채팅방 만들기</a></li>
-					</ul>
 				</li>
+				
 			</ul>
 		</div>
+<<<<<<< HEAD
 		
 		<!-- 본문 -->
 		<div id="menuBox2">
@@ -204,6 +193,10 @@
 	</div>
 
 		
+=======
+	</div>
+	
+>>>>>>> parent of 0048f39... 07.20 test
 <jsp:include page="/jsp/pageFooter.jsp"></jsp:include>
 </body>
 </html>

@@ -35,10 +35,10 @@
 		text-align: center;
 	}	
 	
-/* 	table td,th { */
-/* 	border: solid 1px gray; 寃쎄퀎�꽑 �깋�긽 �뒪���씪 援듦린 */
-/* 	padding: 5px; �븞履� �뿬諛� */
-/* 	} */
+	table td,th {
+	border: solid 1px gray; /* 寃쎄퀎�꽑 �깋�긽 �뒪���씪 援듦린 */
+	padding: 5px; /* �븞履� �뿬諛� */
+	}
 
 	th {
 		background: silver; /* 諛곌꼍�깋 */
@@ -66,9 +66,8 @@
 
 	
 	#main_header > #main_lnb{
-		position: absolute;
-		top : 30px;
-		left : 660px;
+		margin-top: 5%;
+		margin-left: 40%;
 		bottom: 4px;
 	}
 		
@@ -81,8 +80,8 @@
 		
 	}
 	#imgBox{
-		position : absolute;
-		top : 0;
+		margin-left: 5%;
+		top : 50%;
 		left : 700px;
 		display : inline-block;
 		
@@ -353,6 +352,9 @@
 		height: 230px;
 		margin-left: 385px;
 	}
+	
+
+
 		/* 	�뫖�꽣     */
 
 	#main_footer{
@@ -364,58 +366,5 @@
 		border-top: 1px solid #fb2525;
 	}
 
-	#mask{
-      position: absolute;
-      left : 0;
-      top : 0;
-      z-index : 900;
-      background-color: #333;
-      opacity : 0.7;
-      display : none;
-   }
-   #modifyBox{
-      width : 300px;
-      height : 400px;
-      background-color: #fff;
-      position: absolute;
-      top : 100px;
-      left : 50px;
-      padding : 10px;
-      z-index : 1000;
-      display : inline-block;
-   }
-   .modiBtn{
-      border : 1px solid #333;
-      color : #333;
-      background-color: #fff;
-      padding : 5px;
-   }
-   #modiBtn{
-      background-color: transparent;
-      font-size : 16px;
-      border : 0;
-      color : #333;
-      cursor: pointer;
-   }
-   #modiTable > tr,td,th{
-      border : 0 !important;
-      background-color : transparent !important;
-      text-align: center;
-   }
-   #modiTable{
-      height : 300px;
-   }
-   .modiTitle{
-      width : 60px;
-      height : 20px;
-   }
-   .modiInput{
-      width : 140px;
-      height : 20px;
-      background-color: transparent;
-      border : 0;
-   }
-   .modiInput:focus{
-      outline : none;
-   }
+	
 	

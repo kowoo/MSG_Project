@@ -4,23 +4,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet" type="text/css"
+	href="${contextPath}/css/main.css?ver=7">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src = "${contextPath}/js/main.js"></script>
 </head>
 <body>
-	<input type="hidden" id="path" value="${contextPath}"> 
-	<header id="main_header">
-		<hgroup id="title">
-			<img src="${contextPath}/img/msgLogo.png" onclick="location.href='${contextPath}/page/main'">
+	<header id="main_header"> 
+		<hgroup id="title"> 
+			<img src="${contextPath}/img/msgLogo.png">
 		</hgroup> 
 		
 		<nav id="main_lnb">
 			<ul id="ul1">
 				<li><a>게시판</a></li>
 				<li><a>메일</a></li>
-				<li><a>전자결재</a></li>
-				<li><a href="${contextPath}/page/messengerMain">메신저</a></li>
+				<li><a>전자결제</a></li>
+				<li><a>메신저</a></li>
 				<li><a>비품대여</a></li>
 			</ul>
 			<div id="imgBox">

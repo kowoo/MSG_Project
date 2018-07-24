@@ -1,13 +1,8 @@
 package controller;
 
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/page")
@@ -303,14 +298,13 @@ public class ViewController {
 
 	//메신저 메인 페이지 요청
 public class ViewController {
-	@RequestMapping("/main")
-	public String main() {
-		return "main1";
-	}	
-	@RequestMapping("/messengerMain")
+	
+	@RequestMapping("/messengerMainForm")
 	public String messengerMainForm() {
+		System.out.println("들어옴!");
 		return "messengerMain";
 	}
+<<<<<<< HEAD
 
 	//내 채팅방 목록 페이지 요청
 	@RequestMapping("/chatList")
@@ -416,3 +410,7 @@ public class ViewController {
 //		return "messageView";
 //	}
 }
+=======
+	
+}
+>>>>>>> parent of 0048f39... 07.20 test
