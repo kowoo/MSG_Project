@@ -28,7 +28,7 @@
 <body>
 	<div id = "mask"></div>
 	<jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
-	<!-------------------------------------헤더---------------------------------------------------------> 
+	<!-------------------------------------헤더--------------------------------------------------------->
 	
 	<input type = "hidden" id = "path" value = "${contextPath}">
 	<div id="content">
@@ -39,7 +39,7 @@
 				<img id="image1" alt="basicImage" src="${contextPath}/img/default.jpg">
 				<br>
 				<br>
-				<a href = "#" style = "font-size : 13px; margin-left : 45px; font-weight: normal;">MyPage</a>
+				<a href = "#" style = "font-size : 13px; margin-left : 45px; font-weight: normal;" onclick="showMyPage();">MyPage</a>
 			</div>
 			<div id="userInfo">
 				<ul>
@@ -126,6 +126,7 @@
 		</div>
 	</div>
 	<div id = "modifyBox" style = "display : none;" align = "center">
+
            <input type = "button" id = "modiBtn" value = "X" style = "float:right;" onclick = "closeMyPage();">
            <form action = "${contextPath}/emp/userModify" enctype="multipart/form-data" method = "post">
               <table id = "modiTable">
@@ -146,6 +147,28 @@
               <input type = "submit" class = "modiBtn" value = "변경저장">
            </form>
         </div>
+
+        <input type = "button" id = "modiBtn" value = "X" style = "float:right;" onclick = "closeMyPage();">
+        <form action = "${contextPath}/emp/userModify" enctype="multipart/form-data" method = "post">
+           <table id = "modiTable">
+              <tr>
+                 <td colspan = "2"><img src = "${contextPath}/emp/getEmpImage?loginEmp=${user.empNo}" id = "profile_Img" style = "width : 90px; height : 90px; border : 1px solid silver; border-radius: 50%"></td>
+              </tr>
+              <tr>
+                 <td colspan = "2"><input type = "file" name = "file" id = "fileLoad"></td>
+              </tr>
+              <tr>
+                 <th>이메일</th><td><input type = "text" name = "EMPMAIL" class = "modiInput" value = "${user.empMail}"></td>
+              </tr>
+              <tr>
+                 <th>연락처</th><td><input type = "text" name = "EMPTEL" class = "modiInput"  value = "${user.empTel}"></td>
+              </tr>
+           </table>
+           
+           <input type = "submit" class = "modiBtn" value = "변경저장">
+        </form>
+     </div>
+
 	<!-------------------------------------바디---------------------------------------------------------------------------->
 	<jsp:include page="/jsp/pageFooter.jsp"></jsp:include>
 </body>

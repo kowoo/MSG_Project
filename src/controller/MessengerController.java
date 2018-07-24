@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/msg")
 public class MessengerController {
-	 
+
 	@RequestMapping("/addMessage")
 	public String addMessage(Map<String, Object> msg) {
 		System.out.println("addMessage");
