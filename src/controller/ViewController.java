@@ -49,6 +49,11 @@ public class ViewController {
 			return "chatMain";
 		}
 	}
+	@RequestMapping("/openChatRoom")
+	public String chatRoom(@RequestParam(defaultValue="") String key) {
+		System.out.println(key);
+		return "chatRoom";
+	}
 //	@RequestMapping("/msg_view")
 //	public String selectMessageByCondition(@RequestParam String key) {
 //		System.out.println("msg_view");

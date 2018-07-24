@@ -17,7 +17,7 @@
 <body>
 <jsp:include page="/jsp/pageHeader.jsp"></jsp:include>
 	<div id="content">
-		<!-- 사이드 --> 
+		<!-- 사이드 -->
 		<div id="menuBox1">
 			<h3 id="menuBox1_title">메신저</h3>
 			<br>
@@ -45,9 +45,31 @@
 			</ul>
 		</div>
 		<div id="menuBox2">
-			<a>초대 채팅방 목록</a>
-			
-			<hr>		
+			<a>채팅 초대 목록</a>
+			<hr width="550px;">
+			<table id="chat-invite-table">
+				<tr>
+					<th>방 제목</th>
+					<th>초대자 id</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>이장님과 함께 농사지읍시다.</td>
+					<td>이장님</td>
+					<td>
+						<button id="chat-join">참여</button>
+						<button id="chat-reject">거절</button>
+					</td>
+				</tr>
+				<tr>
+					<td>인사 2팀</td>
+					<td>인사돌</td>
+					<td>
+						<button>참여</button>
+						<button>거절</button>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</div>
 <jsp:include page="/jsp/pageFooter.jsp"></jsp:include>
