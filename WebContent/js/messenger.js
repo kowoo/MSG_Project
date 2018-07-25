@@ -123,7 +123,7 @@ function msgReply() {
 	var id = $("#reply-id").val();
 	var con = $("#contextPath").val();
 	//alert(con+"/messageWrite?id="+id);
-	location.href=con+"/page/messageWriteForm?id="+id;
+	location.href=con+"/messenger/messageWriteForm?id="+id;
 };
 //쪽지 작성 시 받는 이 박스 클릭하면 발생하는 이벤트, 조직도 오픈.
 function Callchart() {
