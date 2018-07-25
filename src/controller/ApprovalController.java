@@ -45,14 +45,14 @@ public class ApprovalController {
 	public String approvDoc(String docType, Model model) {
 		String docName = "";
 
-		model.addAttribute("data", service.getDocHeaderInfo(docType));
-		if(docType.equals("kian")) {
-			docName = "draftingPaper";
-		} else if(docType.equals("spend")) {
-			docName = "disbursePaper";
-		} else if(docType.equals("vac")) {
-			docName = "vacationPaper";
-		}
+//		model.addAttribute("data", service.getDocHeaderInfo(docType));
+//		if(docType.equals("kian")) {
+//			docName = "draftingPaper";
+//		} else if(docType.equals("spend")) {
+//			docName = "disbursePaper";
+//		} else if(docType.equals("vac")) {
+//			docName = "vacationPaper";
+//		}
 		return docName;
 	}
 }

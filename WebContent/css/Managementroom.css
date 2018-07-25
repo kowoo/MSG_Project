@@ -17,7 +17,6 @@ a {
    color: black;
    font-weight: bold;
 }
-
 a:hover {
    color: #fb2525;
 }
@@ -78,11 +77,6 @@ img {
 
 #imgBox h4 {
    display: inline-block;
-}
-
-#main_lnb>ul>li {
-   float: left;
-   display: block;
 }
 
 #main_lnb>ul>li>a {
@@ -262,4 +256,7 @@ td {
 
 .menu .hide {
 	visibility:  hidden;
+}
+#auth {
+	display: none;
 }

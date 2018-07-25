@@ -23,12 +23,12 @@
 	});
 
 	function reservation(){
-		window.open("${contextPath}/management/ManagementCarreservation","","width=500, height=200, history=no, resizable=no, status=no, scrollbars=no");
+		window.open("${contextPath}/management/managementCarreservation","","width=500, height=200, history=no, resizable=no, status=no, scrollbars=no");
 	
 	}
 	
 	function modify(){
-		window.open("${contextPath}/management/ManagementCarmodify","","width=500, height=200, history=no, resizable=no, status=no, scrollbars=no");
+		window.open("${contextPath}/management/managementCarmodify","","width=500, height=200, history=no, resizable=no, status=no, scrollbars=no");
 	}
 	
 	
@@ -37,6 +37,8 @@
 </head>
 
 <script type="text/javascript" src="${contextPath}/js/main.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="${contextPath}/css/main.css">
 <link rel="stylesheet" type="text/css"
 	href="${contextPath}/css/Managementroom.css">
 <body>

@@ -17,7 +17,9 @@
 		color: black;
 		font-weight: bold;
 	}
-	
+	#auth {
+		display: none !important;
+	}	
 	a:hover{
 		color : #fb2525 !important;
 	}

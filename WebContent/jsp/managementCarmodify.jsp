@@ -86,12 +86,12 @@
 				</select></td>
 
 			</tr>
-			</div>
-
-			<div align="center">
+	</div>
 
 				<tr>
-
+			<div align="center">
+			
+	
 
 					<th>날짜</th>
 					<td><select id="aa">
@@ -155,7 +155,6 @@
 		</table>
 
 	</div>
-
 
 
 </body>

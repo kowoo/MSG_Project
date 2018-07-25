@@ -17,8 +17,8 @@ a {
 	color: black !important;
 	font-weight: bold;
 }
-#auth{
-	display : none;
+#auth {
+	display: none !important;
 }
 a:hover {
 	color: #fb2525 !important;

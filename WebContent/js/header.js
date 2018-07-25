@@ -43,6 +43,8 @@ $(function(){
 						$("<img src = '"+path+"/img/Haze.png'>").appendTo(box);
 					}else if(status == "Clouds"){
 						$("<img src = '"+path+"/img/cloudy.png'>").appendTo(box);
+					}else if(status == "Clear"){
+						$("<img src = '"+path+"/img/clear.png'>").appendTo(box);
 					}
 
 					$("#place").text(city);
